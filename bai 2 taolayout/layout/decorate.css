@@ -1,0 +1,5 @@
+#header {background-color:maroon; width:400px; color:white;  text-align:center; padding:5px; }
+#nav { line-height:30px; background-color:#ffeeee;  height:300px; width:99px; float:left; padding:5px;  border-left: thin dotted maroon; }
+#section { background-color:#ffaaaa; width:290px;height:300px; float:left; padding:5px; }
+#footer { background-color:maroon; width:400px;  color:white; clear:both; text-align:center;  padding:5px; }
+    

@@ -1,0 +1,124 @@
+body
+{
+    background-color: #cccccc;
+    margin: 0px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-menu
+{
+    background-color: #EFEFEF;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+}
+#header1
+{
+    width: 8%;
+    float: left;
+    color: dimgray;
+}
+img
+{
+    width: 150px;
+    height: 50px;
+    object-fit: scale-down;
+    /*float: inherit;*/
+}
+#mainmenu ul
+{
+    list-style-type: none;
+    display: flex;
+}
+#mainmenu li
+{
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+    width: 150px;
+    height: 50px;
+    float: left;
+}
+nav
+{
+    width: 60%;
+    float: left;
+    color: black;
+}
+#header2
+{
+    width: 5%;
+    float: right;
+    color: dimgray;
+    display: flex;
+}
+.Main-content
+{
+background-color: gray;
+width: 100%;
+height: 400px;
+padding: 5px;
+display: flex;
+}
+selection{
+    background-color: gray;
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    float: right;
+    text-align: center;
+} 
+#titan
+{
+ width: 1870px ;
+ height: 193px;
+ display: flex;
+}
+
+#ip15
+{
+   height:382px;
+   width: 274px;
+   float: left;
+}
+#ip14
+{
+    height:382px;
+   width: 494px;
+   display: left;
+}
+#ip13
+{
+    height:382px;
+    width: 494px;
+    float: left;
+}
+#ip12
+{
+    height:382px;
+    width: 394px;
+    float: left;
+}
+/* #ip11
+{
+    height: 282px;;
+    width: 194px;
+    float: left;
+} */
+.NewRegister
+{
+    background-color: lightgray;
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    text-align: center;
+}
+.footer
+{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    text-align: left;
+}
