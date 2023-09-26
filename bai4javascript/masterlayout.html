@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang Ky Nhan Tin</title>
+    <style type="text/css">
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        form{
+            width:50%;
+            height:600px;
+            vertical-align:middle;
+            background-color:white;
+            border:groove;
+        }
+        #prodoImg , #newregister{
+            padding:5px;
+            width:35%;
+            max-height:600px;
+        }
+        #prodImg{
+            float:left;
+        }
+        img{
+            max-width:100%;
+            max-height:500px;
+        }
+        #newregister{
+            float:left;
+        }
+        span{
+            color:red;
+            font-family:'Courier New';
+        }
+    </style>
+</head>
+<body>
+    <form id="ProdRegister"  name="ProdRegister" runat="server" action="#" onsubmit="return kiemtra()">
+        <div id="prodImg">
+            <img src=https://shopdunk.com/static/media/VN_iPhone_15_Pro_Sep23_Web_Banner_Pre-Avail_v2.1ec11c5d754a51d6e023.png />
+        </div>
+        <div id="newregister" >
+            <h1>Đăng Ký Nhận Tin</h1>
+            <label class="hoten">Họ và tên</label><br />
+            <input type="text" id="name"name="HT" placeholder="Họ và tên"/> <br />
+            <span id="name-eror"></span> <br />
+            <label class="gioitinh">Giới tính</label><br />
+            <select name="Gender">
+                <option name="Gender" value="Nam">Nam</option>
+                <option name="Gender" value="Nu">Nữ</option>
+                <option name="Gender" value="sv">Khác</option>
+            </select> <br />
+            <label class="SDT">Số điện thoại</label> <br />
+            <input  type="tel" id="SDT" name="SDT"/> <br />
+            <label class="Email">Email</label> <br />
+            <input type="email" id="Email" name="Email" /><br />
+            <label class="NganhNghe">Ngành Nghề</label> <br />
+            <input type="text" id="NganhNghe" name="NN"  maxlength="300" placeholder="Ngành Nghề"/><br />
+            <span id="carreer-err"></span><br/>
+            <input type="submit" id="DangKy" name="Dang Ky" value="Đăng ký nhận tin"/><br />
+        </div>
+    </form>
+    <script>
+        function kiemtra(){
+            var HT = document.ProdRegister.HT.value;
+            var NN=document.ProdRegister.NN.value;
+            if (HT=="") { //quy tắc 1
+                document.getElementById("name-eror").innerHTML="Chưa nhập username";
+                return false;
+            }
+            if (NN=="") { //quy tắc 2
+                document.getElementById("carreer-err").innerHTML="Chưa nhập Nganh Nghe";
+                return false;
+            }
+            return true;
+            return true;
+
+        }
+        </script>
+
+</body>
+</html>
